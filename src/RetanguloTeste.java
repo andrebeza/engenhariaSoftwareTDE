@@ -28,7 +28,7 @@ public class RetanguloTeste {
         Retangulo retangulo = new Retangulo(5,6);
 
         int resultado= retangulo.calcularPerimetro();
-        assertEquals(13,resultado);
+        assertEquals(22,resultado);
 
         if ((resultado==retangulo.calcularPerimetro())){
             System.out.println("Resultado esperado!");
@@ -46,16 +46,18 @@ public class RetanguloTeste {
             System.out.println("Volume esperado!");
         }
     }
-    /*@Test
-    public void toInches(){
-        Scanner inches = new Scanner(System.in);
-        cm = inches.nextDouble();
-        cm = cm / 2.54;
 
-        System.out.println(cm);
+    @Test
+    public void volumePiramide(){
+        piramide tri = new piramide(9,10);
 
-        return cm;
-    }*/
+        int calPiramide = tri.piramideVolume();
+        assertEquals(30,calPiramide);
+
+        if ((calPiramide == tri.piramideVolume())){
+            System.out.println("Volume da piramide encontrado!");
+        }
+    }
 
 
 }
